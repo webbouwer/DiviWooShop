@@ -1,0 +1,229 @@
+/*
+ Theme Name:   DiviWooShop
+ Theme URI:    webdesigndenhaag.net
+ Description:  Shop child theme
+ Author:       webbouwer
+ Author URI:   webdesigndenhaag.net
+ Template:     Divi
+ Version:      1.0
+*/
+
+/********************* ICONS ********************/
+
+/* Divi Woocommerce default icon (removed) */
+.et-cart-info {
+   display: none;
+}
+/*
+.et-cart-info span::before{
+   content: "e903" !important;
+}
+*/
+
+
+/* dropdown icon (removed) */
+#et-top-navigation nav #top-menu .menu-item-has-children {
+	padding-right: 0px;
+}
+#et-top-navigation nav #top-menu .menu-item-has-children > a:first-child:after{
+	content:"";
+}
+
+/* add in icon in label */
+#et-top-navigation nav .menu-shop
+{
+	height:30px;
+}
+#et-top-navigation nav .menu-shop > a {
+    display:none !important;
+}
+#et-top-navigation nav .menu-shop:before {
+    display:inline-block;
+	padding-bottom:3px !important;
+	padding-left:2px;
+    font-family: 'ETmodules';
+    font-size: 16px!important;
+	content:"\e013";
+	color:#fefefe;
+	vertical-align:text-bottom;
+}
+#et-top-navigation nav .menu-shop li
+{
+	margin:0px !important;
+	padding:0px !important;
+	width:100% !important;
+}
+#et-top-navigation nav .menu-shop li a
+{
+	margin:0px !important;
+	padding-left:50px !important;
+	width:100% !important;
+}
+#et-top-navigation nav .menu-shop li.menu-item-479:before
+{
+    font-family: 'ETmodules';
+    font-size: 15px!important;
+	content:"\66";
+	position:absolute;
+	left:24px;
+	top:6px;
+}
+#et-top-navigation nav .menu-shop li.menu-item-695:before
+{
+    font-family: 'ETmodules';
+    font-size: 15px!important;
+	content:"\e105";
+	position:absolute;
+	left:24px;
+	top:6px;
+
+}
+#et-top-navigation nav .menu-shop li.menu-item-480:before
+{
+    font-family: 'ETmodules';
+    font-size: 15px!important;
+	content:"\e013";
+	position:absolute;
+	left:24px;
+	top:6px;
+
+}
+
+
+
+
+/***************** HEADER MAIN (primairy) NAVIGATION ***************/
+
+
+/* Main nav */
+#et-top-navigation nav > ul li,
+.et_pb_button,
+#et-top-navigation nav > ul > li > ul > li,
+.et_mobile_menu li a
+{
+	font-weight:400 !important;
+	letter-spacing:0.04em;
+}
+
+#et-top-navigation nav > ul > li > ul
+{
+	border-top:none;
+    margin-top: 8px;
+    margin-left: -100px;
+}
+
+#et-top-navigation nav > ul > li > ul:after {
+    position: absolute;
+    left: 50%;
+    margin-left: -20px;
+    top: -14px;
+    width: 0;
+    height: 0;
+    content:'';
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid black;
+}
+
+#et-top-navigation nav > ul > li.menu-item-540 > ul
+{
+    margin-left: -106px;
+}
+
+/* special submenu */
+#et-top-navigation nav > ul > li.menu-shop > ul
+{
+	top: 32px;
+    margin-left: -110px;
+	background-color:#fefefe !important;
+}
+#et-top-navigation nav > ul > li.menu-shop > ul:after {
+    position: absolute;
+    left: 50%;
+    margin-left: -20px;
+    top: -14px;
+    width: 0;
+    height: 0;
+    content:'';
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #fefefe !important;
+}
+#main-header .nav li.menu-shop ul a {
+    color: #000000 !important;
+}
+
+/*
+#et-top-navigation nav > ul > li.menu-shop ul.submenu li.menu-item a
+{
+	color:black !important;
+}*/
+
+
+
+/****************** MOBILE NAVIGATION **************/
+.mobile_nav
+{
+	margin-top:-10px;
+	margin-bottom:10px;
+}
+.et_mobile_menu
+{
+	margin-top:14px;
+}
+
+@media (max-width: 980px) {
+#logo {
+    max-height: 80% !important;
+}}
+
+
+
+
+/********************* CONTENT ********************/
+
+/* related products */
+section.related.products > h2 {
+	visibility: hidden;
+	position: relative;
+}
+
+section.related.products > h2:after {
+	visibility: visible;
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: "Accessoires";
+}
+
+
+/* sticky element */
+#homepage-scrollmenu
+{
+	width:100% !important;
+}
+
+/********************* Footer ********************/
+
+
+/* Footer */
+#page-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    min-height: 100vh;
+}
+#et-main-area {
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-flow: column;
+    flex-flow: column;
+}
+#et-main-area, #main-content {
+    -webkit-box-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+}
